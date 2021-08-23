@@ -15,7 +15,7 @@ namespace DownloadFile
         {
             _configuration = ConfigurationManager.Load();
 
-            DowloadFileFromServer(_configuration["fileId"], _configuration["filePathForSave"]);
+            DowloadFileFromServer((string)_configuration["fileId"], (string)_configuration["filePathForSave"]);
         }
 
         static void DowloadFileFromServer(string fileId, string filePathForSave)

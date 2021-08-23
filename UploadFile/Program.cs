@@ -14,7 +14,7 @@ namespace UploadFile
         {
             _configuration = ConfigurationManager.Load();
 
-            UploadFileToServer(_configuration["folderId"], _configuration["filePath"]);
+            UploadFileToServer((string)_configuration["folderId"], (string)_configuration["filePath"]);
         }
 
         static void UploadFileToServer(string folderId, string filePath)

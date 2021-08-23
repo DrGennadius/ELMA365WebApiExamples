@@ -10,9 +10,9 @@ namespace BaseHelpersForExamples
 
         public string XToken { get; set; }
 
-        public Dictionary<string, string> Parameters { get; set; }
+        public Dictionary<string, object> Parameters { get; set; }
 
-        public string this[string parameterKey]
+        public object this[string parameterKey]
         {
             get { return Parameters[parameterKey]; }
             set { Parameters[parameterKey] = value; }

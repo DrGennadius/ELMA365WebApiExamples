@@ -16,7 +16,7 @@ namespace GetAppItems
             _configuration = ConfigurationManager.Load();
 
             // 1. Загрузка элементов приложения "app" раздела "chapter"
-            var appItemsInfo = LoadAppItemsInfo(_configuration["chapter"], _configuration["app"]);
+            var appItemsInfo = LoadAppItemsInfo((string)_configuration["chapter"], (string)_configuration["app"]);
 
             if (appItemsInfo != null)
             {
@@ -31,7 +31,7 @@ namespace GetAppItems
             string firstItemId = appItemsInfo.Result.AppItemJObjects[0]["__id"].Value<string>();
 
             // 2. Загрузка одного элемента приложения по id.
-            var singleItemInfo = LoadAppSingleItemInfo(_configuration["chapter"], _configuration["app"], firstItemId);
+            var singleItemInfo = LoadAppSingleItemInfo((string)_configuration["chapter"], (string)_configuration["app"], firstItemId);
             Console.WriteLine(singleItemInfo.Item);
         }
 
@@ -73,7 +73,7 @@ namespace GetAppItems
         {
             if (dictionaryParameters != null && dictionaryParameters.Count > 0)
             {
-                return RequestPost(requestUri, dictionaryParameters);
+                return RequestPost(requestUri, JsonConvert.SerializeObject(dictionaryParameters));
             }
             return RequestPost(requestUri);
         }

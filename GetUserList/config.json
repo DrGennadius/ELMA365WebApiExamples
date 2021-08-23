@@ -1,0 +1,16 @@
+{
+	"urlBase": "https://cy7q5rvhjdwig.elma365.ru",
+	"xToken": "d7e54997-e099-439e-b63d-d5cf3e7cc2ba",
+	"parameters": {
+		"active": true,
+		"filter": {
+			"tf": {
+				"fullname": "Zykov"
+			}
+		},
+		"from": 0,
+		//"ids": "00000000-0000-0000-0000-000000000000",
+		"size": 1
+		//"sortExpressions": []
+	}
+}

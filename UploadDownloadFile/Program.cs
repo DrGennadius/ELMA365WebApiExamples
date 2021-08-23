@@ -18,8 +18,8 @@ namespace UploadDownloadFile
             {
                 _configuration = ConfigurationManager.Load();
 
-                string fileId = UploadFileToServer(_configuration["folderId"], _configuration["filePath"]);
-                DowloadFileFromServer(fileId, _configuration["filePathForSave"]);
+                string fileId = UploadFileToServer((string)_configuration["folderId"], (string)_configuration["filePath"]);
+                DowloadFileFromServer(fileId, (string)_configuration["filePathForSave"]);
                 // Далее нужно удалить файл на сервере или использовать изначально другое наименование.
             }
             catch (Exception ex)

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadFile", "DownloadFil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UploadDownloadFile", "UploadDownloadFile\UploadDownloadFile.csproj", "{BFCC8203-A83A-457C-95E0-C5EAC9C6E1BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUserList", "GetUserList\GetUserList.csproj", "{B9E6840B-650D-4B48-9ABC-FC2ECA1907DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BFCC8203-A83A-457C-95E0-C5EAC9C6E1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFCC8203-A83A-457C-95E0-C5EAC9C6E1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFCC8203-A83A-457C-95E0-C5EAC9C6E1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E6840B-650D-4B48-9ABC-FC2ECA1907DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E6840B-650D-4B48-9ABC-FC2ECA1907DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E6840B-650D-4B48-9ABC-FC2ECA1907DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E6840B-650D-4B48-9ABC-FC2ECA1907DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
